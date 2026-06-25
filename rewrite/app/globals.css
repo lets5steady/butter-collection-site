@@ -1,0 +1,61 @@
+:root {
+  /* Colors */
+  --main-color: #DAD4E2;
+  --base-color: #FFFEF9;
+  --accent-color: #B9AFA3;
+  --text-color: #2E2A24;
+  --btn-color: #654250;
+  --btn-hover-color: #83606E;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-ll: 3rem;
+  --space-xl: 4.5rem;
+  --space-sec: 6rem;
+
+  /* Widths */
+  --max-width-pc: 1100px;
+  --max-width-sp: 315px;
+
+  /* Font Sizes */
+  --fontsize-sm: 0.875rem;
+  --fontsize-md: 1rem;
+  --fontsize-lg: 1.25rem;
+  --fontsize-xl: 1.5rem;
+  --fontsize-nav: 3rem;
+  --fontsize-sp-title: 4rem;
+  --fontsize-title: 6rem;
+
+  /* Font Families */
+  --fontfamily-main: "Noto Serif JP", serif;
+  --fontfamily-english: "Tangerine";
+  --fontfamily-sub: "Cinzel", serif;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-size: var(--fontsize-md);
+    font-family: var(--fontfamily-main);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
