@@ -1,4 +1,4 @@
-import { cookies } from '@/data/products';
+import { cookies, gifts } from '@/data/products';
 import styles from './Product.module.css';
 import Image from 'next/image';
 import CartButton from '../CartButton/CartButton';
@@ -20,6 +20,31 @@ export default function Product() {
                     <dl className={styles.text}>
                         <dt className={styles.name}>{cookie.name}</dt>
                         <dd className={styles.desc}>{cookie.description}</dd>
+                    </dl>
+                    <CartButton />
+                </div>
+            ))}
+        </div>
+    );
+}
+
+export function SubProduct() {
+    return (
+        <div className={styles.sub_list}>
+            {gifts.map(gift => (
+                <div className={styles.sub_item}
+                    key={gift.id}>
+                    <div className={styles.sub_imgbox}>
+                        <Image
+                            className={styles.img}
+                            src={gift.image}
+                            alt={`${gift.name}の商品イメージ`}
+                            width={490}
+                            height={260} />
+                    </div>
+                    <dl className={styles.text}>
+                        <dt className={styles.name}>{gift.name}</dt>
+                        <dd className={styles.desc}>{gift.description}</dd>
                     </dl>
                     <CartButton />
                 </div>

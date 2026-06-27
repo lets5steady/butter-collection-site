@@ -1,11 +1,11 @@
-type Cookie = {
+type ProductType = {
     id: string;
     name: string;
     description: string;
     image: string;
 };
 
-export const cookies:Cookie[] = [
+export const cookies:ProductType[] = [
     {
         id: 'shortbread',
         name: 'ショートブレッド',
@@ -60,4 +60,19 @@ export const cookies:Cookie[] = [
         description: 'ほろ苦いココアと、発酵バターが溶け合う一枚。',
         image: '/icebox.jpg',
     }
+]
+
+export const gifts:ProductType[] = [
+    {
+        id: 'giftbox01',
+        name: 'ギフトセット -large-',
+        description: '定番クッキーとギフト限定クッキーを贅沢に味わうセット。',
+        image: '/giftbox01.jpg',
+    },
+    {
+        id: 'giftbox02',
+        name: 'ギフトセット -small-',
+        description: '人気商品を食べ比べできるセット。',
+        image: '/giftbox02.jpg',
+    },
 ]

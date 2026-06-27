@@ -2,7 +2,7 @@ import Image from "next/image";
 import MenuBar from "./_components/MenuBar/MenuBar";
 import Hero from "./_components/Hero/Hero";
 import SectionTitle from "./_components/SectionTitle/SectionTitle";
-import Product from "./_components/Product/Product";
+import Product, { SubProduct } from "./_components/Product/Product";
 
 export default function Home() {
   return (
@@ -11,6 +11,9 @@ export default function Home() {
       <Hero />
       <SectionTitle text="Cookies"/>
       <Product />
+      <SectionTitle text="Gift"/>
+      <SubProduct />
+
     </>
   );
 }

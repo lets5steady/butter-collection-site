@@ -9,3 +9,9 @@
     background-size: 260px;
     background-position: center bottom;
 }
+
+@media (width < 500) {
+    .title{
+    background-size: 160px;
+    }
+}
