@@ -18,7 +18,7 @@
     background-color: var(--main-color);
 }
 
-@media (width < 500) {
+@media (width < 700) {
     .nav{
         display: none;
     }

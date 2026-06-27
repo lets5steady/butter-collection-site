@@ -1,12 +1,14 @@
 import Image from "next/image";
 import MenuBar from "./_components/MenuBar/MenuBar";
 import Hero from "./_components/Hero/Hero";
+import SectionTitle from "./_components/SectionTitle/SectionTitle";
 
 export default function Home() {
   return (
     <>
       <MenuBar />
       <Hero />
+      <SectionTitle text="Cookies"/>
     </>
   );
 }

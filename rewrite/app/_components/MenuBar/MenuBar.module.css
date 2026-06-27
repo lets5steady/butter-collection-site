@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    font-size: clamp(2rem, 1.78vw + 1.44rem, 3rem);
+    font-size: clamp(2rem, 1.353vw + 1.405rem, 3rem);
     font-family: var(--fontfamily-english);
 }
 
@@ -26,7 +26,7 @@
     color: var(--base-color);
 }
 
-@media (width < 500) {
+@media (width < 700) {
     .menubar{
         display: none;
     }
