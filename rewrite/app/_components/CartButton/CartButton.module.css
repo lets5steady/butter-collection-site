@@ -1,0 +1,22 @@
+.btn{
+    width: 160px;
+    padding: 0.75rem;
+    display: block;
+    background-color: var(--btn-color);
+    color: var(--base-color);
+    justify-self: center;
+    transition: all 0.3s ease-out 0s;
+    border: none;
+    font-family: var(--fontfamily-main);
+}
+
+.btn:hover{
+    background-color: var(--btn-hover-color);
+}
+
+@media (width < 500) {
+    .btn{
+        width: 130px;
+        padding: 0.5rem;
+    }
+}

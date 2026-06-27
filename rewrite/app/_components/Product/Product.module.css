@@ -10,12 +10,10 @@
 
 .item{
     padding-bottom: var(--space-md);
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
-    row-gap: var(--space-md);
+    row-gap: var(--space-xs);
     justify-content: center;
     text-align: center;
     background-color: white;
@@ -46,7 +44,7 @@
 
 .desc{
     margin-inline: var(--space-sm);
-    font-size: var(--fontsize-sm);
+    font-size: clamp(0.8125rem, 0.213vw + 0.746rem, 0.9375rem);
     line-height: 1.7;
 }
 
@@ -54,5 +52,8 @@
     .list{
     max-width: var(--max-width-sp);
     grid-template-columns: repeat(2, 1fr);
+    }
+    .item{
+        row-gap: 0;
     }
 }

@@ -1,6 +1,7 @@
 import { cookies } from '@/data/products';
 import styles from './Product.module.css';
 import Image from 'next/image';
+import CartButton from '../CartButton/CartButton';
 
 export default function Product() {
     return (
@@ -20,6 +21,7 @@ export default function Product() {
                         <dt className={styles.name}>{cookie.name}</dt>
                         <dd className={styles.desc}>{cookie.description}</dd>
                     </dl>
+                    <CartButton />
                 </div>
             ))}
         </div>
