@@ -1,0 +1,11 @@
+.container{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+}
+
+@media (width < 500) {
+    .img{
+    max-width: var(--max-width-sp);
+    }
+}
