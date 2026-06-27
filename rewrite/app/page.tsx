@@ -2,6 +2,7 @@ import Image from "next/image";
 import MenuBar from "./_components/MenuBar/MenuBar";
 import Hero from "./_components/Hero/Hero";
 import SectionTitle from "./_components/SectionTitle/SectionTitle";
+import Product from "./_components/Product/Product";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <MenuBar />
       <Hero />
       <SectionTitle text="Cookies"/>
+      <Product />
     </>
   );
 }
