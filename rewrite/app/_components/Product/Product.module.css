@@ -45,7 +45,6 @@
 
 .desc{
     margin-inline: var(--space-sm);
-    font-size: clamp(0.8125rem, 0.213vw + 0.746rem, 0.9375rem);
     line-height: 1.7;
 }
 
@@ -65,6 +64,9 @@
     }
     .item{
         row-gap: 0;
+    }
+    .desc{
+        font-size: var(--fontsize-sm);
     }
     .sub_list{
         max-width: var(--max-width-sp);

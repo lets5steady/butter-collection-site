@@ -3,6 +3,7 @@ import MenuBar from "./_components/MenuBar/MenuBar";
 import Hero from "./_components/Hero/Hero";
 import SectionTitle from "./_components/SectionTitle/SectionTitle";
 import Product, { SubProduct } from "./_components/Product/Product";
+import Features from "./_components/Features/Features";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Product />
       <SectionTitle text="Gift"/>
       <SubProduct />
+      <Features />
 
     </>
   );
