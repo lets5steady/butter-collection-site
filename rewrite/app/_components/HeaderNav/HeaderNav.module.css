@@ -1,0 +1,25 @@
+.nav{
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.icon{
+    min-width: 32px;
+    padding: var(--space-xs);
+    display: block;
+    transition: all 0.3s ease-out 0s;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background-color: var(--main-color);
+}
+
+@media (width < 500) {
+    .nav{
+        display: none;
+    }
+}
