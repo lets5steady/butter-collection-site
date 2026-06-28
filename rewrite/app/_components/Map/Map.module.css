@@ -1,0 +1,18 @@
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.iframe{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: none;
+}
+
+@media (width < 700) {
+    .container{
+        display: block;
+    }
+}
