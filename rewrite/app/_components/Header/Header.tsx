@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from './Header.module.css';
 import HeaderNav from "../HeaderNav/HeaderNav";
+import FixedMenu from "../FixedMenu/FixedMenu";
 
 export default function Header() {
     return(
@@ -17,6 +18,7 @@ export default function Header() {
                 />
             </Link>
             <HeaderNav />
+            <FixedMenu />
         </header>
     );
 }
