@@ -21,7 +21,7 @@ export default function Header() {
                     alt='butter-collctionのロゴ'
                     className={styles.logo}
                     width={240}
-                    height={160}
+                    height={180}
                     priority
                 />
             </Link>

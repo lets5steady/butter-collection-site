@@ -10,6 +10,7 @@ export default function Hero() {
             alt='ヒーロー背景'
             width={1100}
             height={460}
+            loading="eager"
             />
         </div>
     );
