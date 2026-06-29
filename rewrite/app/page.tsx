@@ -7,6 +7,7 @@ import Features from "./_components/Features/Features";
 import Calendar from "./_components/Calendar/Calendar";
 import Map from "./_components/Map/Map";
 import Flex from "./_components/Flex/Flex";
+import ShopData from "./_components/ShopData/ShopData";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Calendar />
         <Map />
       </Flex>
+      <ShopData />
 
 
     </>
