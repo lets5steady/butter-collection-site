@@ -2,6 +2,7 @@
     max-width: var(--max-width-pc);
     margin-block: var(--space-sec);
     margin-inline: auto;
+    padding-inline: var(--space-sm);
     display: flex;
     justify-content: center;
     gap: 5%; 

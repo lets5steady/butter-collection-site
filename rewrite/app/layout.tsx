@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Tangerine } from 'next/font/google';
+import { Cinzel } from 'next/font/google';
 import "./globals.css";
 import Header from "./_components/Header/Header";
+import Footer from "./_components/Footer/Footer";
 
 
 export const metadata: Metadata = {
@@ -10,9 +12,14 @@ export const metadata: Metadata = {
 };
 
 const FontTangerine = Tangerine({
-    weight: ["400","700"],
-    subsets: ["latin"],
+  weight: ["400", "700"],
+  subsets: ["latin"],
 });
+
+const FontCinzel = Cinzel({
+  weight: ["400"],
+  subsets: ["latin"],
+})
 
 export default function RootLayout({
   children,
@@ -20,13 +27,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={FontTangerine.className}>
+    <html lang="ja">
       <body>
         <Header />
         <main>
           {children}
-          </main>
-        </body>
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,8 +1,9 @@
 .list{
     max-width: var(--max-width-pc);
     margin-inline: auto;
+    padding-inline: var(--space-sm);
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px , 290px));
+    grid-template-columns: repeat(3, minmax(180px , 290px));
     justify-content: center;
     column-gap: 5%;
     row-gap: var(--space-xl);

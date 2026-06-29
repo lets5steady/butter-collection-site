@@ -28,7 +28,7 @@
 
   /* Font Families */
   --fontfamily-main: "Noto Serif JP", serif;
-  --fontfamily-english: "Tangerine";
+  --fontfamily-english: "Tangerine", serif;
   --fontfamily-sub: "Cinzel", serif;
 }
 
