@@ -33,6 +33,7 @@
 .label{
     margin-block: 0;
     font-size: 0.75rem;
+    color: var(--text-color);
 }
 
 @media (width > 500) {

@@ -13,13 +13,13 @@
     width: 100%;
     height: 50%;
     z-index: 500;
-    /* 最下部固定メニュー(FixedMenuの高さ) */
-    bottom: 58;
+    /* 最下部固定メニュー(FixedMenuの高さ)58だと隙間が出るため調整 */
+    bottom: 55;
     left: 0;
 }
 
 .btn{
-    padding: var(--space-xs);
+    padding: var(--space-sm);
     align-self: flex-end;
     background-color: inherit;
     border: none;
@@ -35,4 +35,5 @@
     padding-inline-start:  var(--space-sm);
     border-bottom: 1px solid var(--base-color);
     font-family: var(--fontfamily-sub);
+    color: var(--text-color);
 }
