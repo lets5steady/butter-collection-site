@@ -8,13 +8,13 @@ import Footer from "./_components/Footer/Footer";
 export const metadata: Metadata = {
   title: "Butter Collection",
   description: "Butter Collectionは、芳醇な発酵バターの香りと繊細な口どけを追求したクッキー専門店です",
-  metadataBase: new URL("https://butter-collection-site-2nso8zpgu-lets5steadys-projects.vercel.app/"),
+  metadataBase: new URL("https://butter-collection-site.vercel.app/"),
   
   // OGPの設定
   openGraph: {
     title: "Butter Collection",
     description: "Butter Collectionは、芳醇な発酵バターの香りと繊細な口どけを追求したクッキー専門店です",
-    url: "https://butter-collection-site-2nso8zpgu-lets5steadys-projects.vercel.app/",
+    url: "https://butter-collection-site.vercel.app/",
     siteName: "Butter Collection",
     locale: "ja_JP",
     type: "website",
