@@ -1,0 +1,39 @@
+type InfoType = {
+    id: string;
+    name: string;
+    description?: string;
+    image?: string[];
+}
+
+export const shopData:InfoType[] = [
+    {
+        id: 'address',
+        name: '住所：',
+        description: '兵庫県神戸市中央区京町67' ,
+    },
+        {
+        id: 'openinghours',
+        name: '営業時間：',
+        description: '10:00〜19:00',
+    },
+    {
+        id: 'closed',
+        name: '定休日：',
+        description: '月曜日' ,
+    },
+    {
+        id: 'tel',
+        name: 'TEL：',
+        description: '078-000-0000' ,
+    },
+    {
+        id: 'station',
+        name: '最寄駅：',
+        description: 'JR神戸線 三宮駅より徒歩12分' ,
+    },
+    {
+        id: 'sns',
+        name: 'SNS/お知らせ：',
+        image: ['/email.png','/message.png','/instagram.png'],
+    },
+];

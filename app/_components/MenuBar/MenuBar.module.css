@@ -1,0 +1,33 @@
+.menubar{
+    width: 100%;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+}
+
+.list{
+    width: 100%;
+    max-width: var(--max-width-pc);
+    margin-block: 0;
+    margin-inline: var(--space-sm);
+    padding: var(--space-sm);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: clamp(2rem, 1.353vw + 1.405rem, 3rem);
+    font-family: var(--fontfamily-english);
+}
+
+.link{
+    transition: all 0.3s ease-out 0s;
+}
+
+.link:hover{
+    color: var(--base-color);
+}
+
+@media (width < 700) {
+    .menubar{
+        display: none;
+    }
+}

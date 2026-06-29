@@ -1,0 +1,17 @@
+.title{
+    margin-block: var(--space-xl);
+    font-size: clamp(4rem, 6.4vw + 2rem, 6rem);
+    font-family: var(--fontfamily-english);
+    font-weight: 700;
+    text-align: center;
+    background-image: url(/line.png);
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position: center bottom;
+}
+
+@media (width < 500) {
+    .title{
+    background-size: 160px;
+    }
+}

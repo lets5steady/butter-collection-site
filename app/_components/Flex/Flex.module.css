@@ -1,0 +1,16 @@
+.flex{
+    max-width: var(--max-width-pc);
+    margin-block: var(--space-sec);
+    margin-inline: auto;
+    padding-inline: var(--space-sm);
+    display: flex;
+    justify-content: center;
+    gap: 5%; 
+}
+
+@media (width < 700) {
+    .flex{
+        max-width: var(--max-width-sp); 
+        display: block;
+    }
+}
