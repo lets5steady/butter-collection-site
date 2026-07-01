@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './Footer.module.css';
 import Link from 'next/link';
+import logo from '@/assets/logo-small.png';
 
 export default function Footer() {
     return(
@@ -27,7 +28,7 @@ export default function Footer() {
             <div className={styles.container}>
                 <Image
                     className={styles.logo}
-                    src='/logo-small.png'
+                    src={logo}
                     alt='butter-collctionのロゴ'
                     width={160}
                     height={160}

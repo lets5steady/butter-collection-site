@@ -8,7 +8,7 @@ export default function ShopData() {
             <div className={styles.imgbox}>
             <Image 
             className={styles.img}
-            src='/shop.jpg'
+            src='/images/shop.jpg'
             alt='店の外観'
             width={490}
             height={327}/>
@@ -20,7 +20,7 @@ export default function ShopData() {
                     <div className={styles.icons}>
                         {data.image?.map(img => (
                             <Image className={styles.icon}
-                            key={img}
+                            key={crypto.randomUUID()}
                             src={img}
                             alt='アイコン'
                             width={24}
