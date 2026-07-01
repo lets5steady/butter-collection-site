@@ -1,8 +1,13 @@
+import email from '@/assets/email.png';
+import message from '@/assets/message.png';
+import instagram from '@/assets/instagram.png';
+import { StaticImageData } from 'next/image';
+
 type InfoType = {
     id: string;
     name: string;
     description?: string;
-    image?: string[];
+    image?: StaticImageData[];
 }
 
 export const shopData:InfoType[] = [
@@ -34,6 +39,6 @@ export const shopData:InfoType[] = [
     {
         id: 'sns',
         name: 'SNS/お知らせ：',
-        image: ['/email.png','/message.png','/instagram.png'],
+        image: [email,message,instagram],
     },
 ];

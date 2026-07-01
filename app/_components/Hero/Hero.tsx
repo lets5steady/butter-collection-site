@@ -6,7 +6,7 @@ export default function Hero() {
         <div className={styles.container}>
             <Image 
             className={styles.img}
-            src='/giftbox03.jpg'
+            src='/images/giftbox03.jpg'
             alt='ヒーロー背景'
             width={1100}
             height={460}
