@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import { Tangerine } from 'next/font/google';
-import { Cinzel } from 'next/font/google';
+import { Tangerine, Cinzel, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header/Header";
 import Footer from "./_components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Butter Collection",
-  description: "Butter Collectionは、芳醇な発酵バターの香りと繊細な口どけを追求したクッキー専門店です",
+  description:
+    "Butter Collectionは、芳醇な発酵バターの香りと繊細な口どけを追求したクッキー専門店です",
   metadataBase: new URL("https://butter-collection-site.vercel.app/"),
-  
+
   // OGPの設定
   openGraph: {
     title: "Butter Collection",
-    description: "Butter Collectionは、芳醇な発酵バターの香りと繊細な口どけを追求したクッキー専門店です",
+    description:
+      "Butter Collectionは、芳醇な発酵バターの香りと繊細な口どけを追求したクッキー専門店です",
     url: "https://butter-collection-site.vercel.app/",
     siteName: "Butter Collection",
     locale: "ja_JP",
@@ -32,7 +33,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Butter Collection",
-    description: "Butter Collectionは、芳醇な発酵バターの香りと繊細な口どけを追求したクッキー専門店です",
+    description:
+      "Butter Collectionは、芳醇な発酵バターの香りと繊細な口どけを追求したクッキー専門店です",
     images: {
       url: "/ogpimage.jpg",
       alt: "こだわりのギフトボックスに詰め合わされた、様々な",
@@ -48,12 +50,19 @@ export const metadata: Metadata = {
 const FontTangerine = Tangerine({
   weight: ["400", "700"],
   subsets: ["latin"],
+  variable: "--fontfamily-english",
 });
 
 const FontCinzel = Cinzel({
   weight: ["400"],
   subsets: ["latin"],
-})
+  variable: "--fontfamily-sub",
+});
+
+const FontNotoSerif = Noto_Serif_JP({
+  subsets: ["latin"],
+  variable: "--fontfamily-main",
+});
 
 export default function RootLayout({
   children,
@@ -62,11 +71,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>
+      <body
+        className={`
+    ${FontTangerine.variable}
+    ${FontCinzel.variable} 
+      ${FontNotoSerif.variable}
+  `}
+      >
         <Header />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
