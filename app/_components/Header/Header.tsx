@@ -27,8 +27,8 @@ export default function Header() {
                 />
             </Link>
             <HeaderNav />
-            <FixedMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
-            {isOpen && <DrawerMenu isOpen={isOpen} setIsOpen={setIsOpen}/>}
+            <FixedMenu setIsOpen={setIsOpen}/>
+            {isOpen && <DrawerMenu setIsOpen={setIsOpen}/>}
         </header>
     );
 }

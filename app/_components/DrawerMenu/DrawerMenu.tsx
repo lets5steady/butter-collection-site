@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import styles from './DrawerMenu.module.css';
 import Image from 'next/image';
+import close from '@/assets/close.png';
 
 type DrawerMenuProps = {
-    isOpen: boolean,
     setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function DrawerMenu({ isOpen, setIsOpen }: DrawerMenuProps) {
+export default function DrawerMenu({ setIsOpen }: DrawerMenuProps) {
 
     const handleOverlayClick = (
         e: React.MouseEvent<HTMLDivElement>
@@ -23,7 +23,7 @@ export default function DrawerMenu({ isOpen, setIsOpen }: DrawerMenuProps) {
             <div className={styles.drawerMenu}>
                 <button className={styles.btn}
                     onClick={() => setIsOpen(false)}>
-                    <Image src="/close.png"
+                    <Image src={close}
                         alt="閉じるボタン"
                         width={24}
                         height={24} />

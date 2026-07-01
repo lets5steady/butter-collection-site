@@ -1,47 +1,51 @@
 import Image from 'next/image';
 import styles from './FixedMenu.module.css';
+import menu from '@/assets/menu.png';
+import home from '@/assets/home.png';
+import product from '@/assets/product.png';
+import access from '@/assets/access.png';
+import cart from '@/assets/cart.png';
 
 type FixedMenuProps = {
-    isOpen: boolean,
     setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function FixedMenu({isOpen,setIsOpen}:FixedMenuProps) {
+export default function FixedMenu({ setIsOpen }:FixedMenuProps) {
     return(
         <div className={styles.menu}>
             <ul className={styles.list}>
                 <li className={styles.item}>
                     <button type="button" className={`${styles.drawerButton} ${styles.btn}`}
                     onClick={() => setIsOpen(prev => !prev)}>
-                        <Image src="/menu.png" alt="メニュー"
+                        <Image src={menu} alt="メニュー"
                         width={24} height={24}/>
                         <p className={styles.label}>MENU</p>
                     </button>
                 </li>
                 <li className={styles.item}>
                     <button type="button" className={styles.btn}>
-                        <Image src="/home.png" alt="ホーム"
+                        <Image src={home} alt="ホーム"
                         width={24} height={24}/>
                         <p className={styles.label}>HOME</p>
                     </button>
                 </li>
                 <li className={styles.item}>
                     <button type="button" className={styles.btn}>
-                        <Image src="/product.png" alt="商品"
+                        <Image src={product} alt="商品"
                         width={24} height={24}/>
                         <p className={styles.label}>PRODUCT</p>
                     </button>
                 </li>
                 <li className={styles.item}>
                     <button type="button" className={styles.btn}>
-                        <Image src="/access.png" alt="アクセス"
+                        <Image src={access} alt="アクセス"
                         width={24} height={24}/>
                         <p className={styles.label}>ACCESS</p>
                     </button>
                 </li>
                 <li className={styles.item}>
                     <button type="button" className={styles.btn}>
-                        <Image src="/cart.png" alt="カート"
+                        <Image src={cart} alt="カート"
                         width={24} height={24}/>
                         <p className={styles.label}>CART</p>
                     </button>
