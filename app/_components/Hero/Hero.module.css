@@ -4,8 +4,18 @@
     justify-content: center;
 }
 
-@media (width < 500) {
-    .img{
-    max-width: var(--max-width-sp);
+.imgbox{
+    width: 60%;
+    margin-inline: auto;
+}
+
+.imgbox img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+@media (width < 500px) {
+    .imgbox{
+        width: 90%;
     }
 }
