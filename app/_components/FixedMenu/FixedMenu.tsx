@@ -45,11 +45,11 @@ export default function FixedMenu({ setIsOpen }:FixedMenuProps) {
                     </Link>
                 </li>
                 <li className={styles.item}>
-                    <button type="button" className={styles.btn}>
+                    <Link href='/cart' className={styles.btn}>
                         <Image src={cart} alt="カート"
                         width={24} height={24}/>
                         <p className={styles.label}>CART</p>
-                    </button>
+                    </Link>
                 </li>
             </ul>
         </div>

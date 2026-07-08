@@ -30,12 +30,12 @@ export default function DrawerMenu({ setIsOpen }: DrawerMenuProps) {
                 </button>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <Link href="/" className={styles.link}>
+                        <Link href="/search" className={styles.link}>
                             Search
                         </Link>
                     </li>
                     <li className={styles.item}>
-                        <Link href="/" className={styles.link}>
+                        <Link href="/mypage" className={styles.link}>
                             MyPage
                         </Link>
                     </li>
@@ -50,7 +50,7 @@ export default function DrawerMenu({ setIsOpen }: DrawerMenuProps) {
                         </Link>
                     </li>
                     <li className={styles.item}>
-                        <Link href="/" className={styles.link}>
+                        <Link href="/contact" className={styles.link}>
                             Contact
                         </Link>
                     </li>
