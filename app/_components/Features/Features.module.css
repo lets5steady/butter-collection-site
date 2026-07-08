@@ -37,11 +37,11 @@
 }
 
 .desc{
-    font-size: clamp(1rem, 0.426vw + 0.867rem, 1.25rem);
+    font-size: clamp(0.875rem, 0.426vw + 0.742rem, 1.125rem);
     line-height: 1.7;
 }
 
-@media (width < 700) {
+@media (width < 700px) {
     .inner{
         margin: 0 auto;
         padding-block: 0;

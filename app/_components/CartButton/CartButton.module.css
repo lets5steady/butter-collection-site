@@ -14,7 +14,7 @@
     background-color: var(--btn-hover-color);
 }
 
-@media (width < 500) {
+@media (width < 500px) {
     .btn{
         width: 130px;
         padding: 0.5rem;

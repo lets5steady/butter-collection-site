@@ -1,17 +1,16 @@
-import Image from 'next/image';
 import styles from './Hero.module.css';
+import { ReactNode } from 'react';
 
-export default function Hero() {
+type HeroProps = {
+    children: ReactNode
+}
+
+export default function Hero({children}:HeroProps) {
     return(
         <div className={styles.container}>
-            <Image 
-            className={styles.img}
-            src='/images/giftbox03.jpg'
-            alt='ヒーロー背景'
-            width={1100}
-            height={460}
-            loading="eager"
-            />
+            <div className={styles.imgbox}>
+                {children}
+            </div>
         </div>
     );
 }
