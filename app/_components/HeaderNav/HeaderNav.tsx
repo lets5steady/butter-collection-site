@@ -9,13 +9,15 @@ export default function HeaderNav() {
     return (
         <ul className={styles.nav}>
             <li>
-                <Image
-                    src={search}
-                    alt='検索'
-                    className={styles.icon}
-                    width={32}
-                    height={32}
-                />
+                <Link href='/search'>
+                    <Image
+                        src={search}
+                        alt='検索'
+                        className={styles.icon}
+                        width={32}
+                        height={32}
+                    />
+                </Link>
             </li>
             <li>
                 <Link href='/mypage'>
