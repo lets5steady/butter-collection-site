@@ -5,3 +5,9 @@
     gap: var(--space-xs);
     font-size: var(--fontsize-sm);
 }
+
+@media (width < 700px) {
+    .date{
+        font-size: var(--fontsize-xs);
+    }
+}

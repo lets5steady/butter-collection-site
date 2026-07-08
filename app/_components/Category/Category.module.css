@@ -1,7 +1,14 @@
 .tag{
+    padding: 0.5rem;
     background-color: var(--main-color);
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    white-space: nowrap;
     font-size: var(--fontsize-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width < 700px) {
+    .tag{
+        font-size: var(--fontsize-xs);
+    }
 }

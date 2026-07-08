@@ -21,6 +21,7 @@
   --max-width-sp: 315px;
 
   /* Font Sizes */
+  --fontsize-xs: 0.625rem;
   --fontsize-sm: 0.875rem;
   --fontsize-md: 1rem;
   --fontsize-lg: 1.25rem;
