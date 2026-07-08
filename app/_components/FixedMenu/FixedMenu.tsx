@@ -5,6 +5,7 @@ import home from '@/assets/home.png';
 import product from '@/assets/product.png';
 import access from '@/assets/access.png';
 import cart from '@/assets/cart.png';
+import Link from 'next/link';
 
 type FixedMenuProps = {
     setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
@@ -23,25 +24,25 @@ export default function FixedMenu({ setIsOpen }:FixedMenuProps) {
                     </button>
                 </li>
                 <li className={styles.item}>
-                    <button type="button" className={styles.btn}>
+                    <Link href='/#home' className={styles.btn}>
                         <Image src={home} alt="ホーム"
                         width={24} height={24}/>
                         <p className={styles.label}>HOME</p>
-                    </button>
+                    </Link>
                 </li>
                 <li className={styles.item}>
-                    <button type="button" className={styles.btn}>
+                    <Link href='/#product' className={styles.btn}>
                         <Image src={product} alt="商品"
                         width={24} height={24}/>
                         <p className={styles.label}>PRODUCT</p>
-                    </button>
+                    </Link>
                 </li>
                 <li className={styles.item}>
-                    <button type="button" className={styles.btn}>
+                    <Link href='/#access' className={styles.btn}>
                         <Image src={access} alt="アクセス"
                         width={24} height={24}/>
                         <p className={styles.label}>ACCESS</p>
-                    </button>
+                    </Link>
                 </li>
                 <li className={styles.item}>
                     <button type="button" className={styles.btn}>

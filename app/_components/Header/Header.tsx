@@ -15,9 +15,9 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header} id="home">
             <h1 className={styles.title}>
-                <Link href="/" className={styles.logoLink}>
+                <Link href="/#home" className={styles.logoLink}>
                     <Image
                         src={logo}
                         alt='butter-collctionのロゴ'
