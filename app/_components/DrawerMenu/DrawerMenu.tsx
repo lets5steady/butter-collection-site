@@ -40,7 +40,7 @@ export default function DrawerMenu({ setIsOpen }: DrawerMenuProps) {
                         </Link>
                     </li>
                     <li className={styles.item}>
-                        <Link href="/" className={styles.link}>
+                        <Link href="about" className={styles.link}>
                             About
                         </Link>
                     </li>
