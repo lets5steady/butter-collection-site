@@ -10,7 +10,7 @@
     background-position: center bottom;
 }
 
-@media (width < 500) {
+@media (width < 500px) {
     .title{
     background-size: 160px;
     }

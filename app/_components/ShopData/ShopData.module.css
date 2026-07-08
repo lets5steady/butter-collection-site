@@ -47,7 +47,7 @@
     background-color: var(--main-color);
 }
 
-@media (width < 700) {
+@media (width < 700px) {
     .container{
         width: 100%;
         max-width: var(--max-width-sp);

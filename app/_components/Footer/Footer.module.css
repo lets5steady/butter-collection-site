@@ -37,7 +37,7 @@
     text-align: center;
 }
 
-@media (width < 700) {
+@media (width < 700px) {
     .nav{
         padding-inline-start: var(--space-sm);
     }

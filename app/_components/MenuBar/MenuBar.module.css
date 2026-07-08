@@ -26,7 +26,7 @@
     color: var(--base-color);
 }
 
-@media (width < 700) {
+@media (width < 700px) {
     .menubar{
         display: none;
     }

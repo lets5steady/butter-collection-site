@@ -41,7 +41,7 @@
     line-height: 1.7;
 }
 
-@media (width < 700) {
+@media (width < 700px) {
     .inner{
         margin: 0 auto;
         padding-block: 0;

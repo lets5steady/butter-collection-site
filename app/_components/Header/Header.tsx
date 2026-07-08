@@ -16,16 +16,17 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <Link href="/" className={styles.logoLink}>
-                <Image
-                    src={logo}
-                    alt='butter-collctionのロゴ'
-                    className={styles.logo}
-                    width={240}
-                    height={180}
-                    priority
-                />
-            </Link>
+            <h1 className={styles.title}>
+                <Link href="/" className={styles.logoLink}>
+                    <Image
+                        src={logo}
+                        alt='butter-collctionのロゴ'
+                        width={240}
+                        height={180}
+                        priority
+                    />
+                </Link>
+            </h1>
             <HeaderNav />
             <FixedMenu setIsOpen={setIsOpen}/>
             {isOpen && <DrawerMenu setIsOpen={setIsOpen}/>}

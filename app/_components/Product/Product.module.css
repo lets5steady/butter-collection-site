@@ -58,7 +58,7 @@
     gap: 5%;
 }
 
-@media (width < 500) {
+@media (width < 500px) {
     .list{
     max-width: var(--max-width-sp);
     grid-template-columns: repeat(2, 1fr);
