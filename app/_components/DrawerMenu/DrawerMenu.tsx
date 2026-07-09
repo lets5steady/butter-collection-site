@@ -49,11 +49,6 @@ export default function DrawerMenu({ setIsOpen }: DrawerMenuProps) {
                             News
                         </Link>
                     </li>
-                    <li className={styles.item}>
-                        <Link href="/contact" className={styles.link} onClick={() => setIsOpen(false)}>
-                            Contact
-                        </Link>
-                    </li>
                 </ul>
             </div>
         </div>
