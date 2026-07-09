@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  devIndicators: {
+    position: "top-right",
+  },
   /* config options here */
 };
 

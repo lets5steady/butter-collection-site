@@ -30,27 +30,27 @@ export default function DrawerMenu({ setIsOpen }: DrawerMenuProps) {
                 </button>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <Link href="/search" className={styles.link}>
+                        <Link href="/search" className={styles.link} onClick={() => setIsOpen(false)}>
                             Search
                         </Link>
                     </li>
                     <li className={styles.item}>
-                        <Link href="/mypage" className={styles.link}>
+                        <Link href="/mypage" className={styles.link} onClick={() => setIsOpen(false)}>
                             MyPage
                         </Link>
                     </li>
                     <li className={styles.item}>
-                        <Link href="/about" className={styles.link}>
+                        <Link href="/about" className={styles.link} onClick={() => setIsOpen(false)}>
                             About
                         </Link>
                     </li>
                     <li className={styles.item}>
-                        <Link href="/news" className={styles.link}>
+                        <Link href="/news" className={styles.link} onClick={() => setIsOpen(false)}>
                             News
                         </Link>
                     </li>
                     <li className={styles.item}>
-                        <Link href="/contact" className={styles.link}>
+                        <Link href="/contact" className={styles.link} onClick={() => setIsOpen(false)}>
                             Contact
                         </Link>
                     </li>
