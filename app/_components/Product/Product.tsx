@@ -5,7 +5,7 @@ import CartButton from '../CartButton/CartButton';
 
 export default function Product() {
     return (
-        <div className={styles.list} id='product'>
+        <div className={styles.list}>
             {cookies.map(cookie => (
                 <div className={styles.item}
                     key={cookie.id}>
