@@ -1,21 +1,13 @@
-.container{
-    background-color: var(--main-color);
+.embla {
+    overflow: hidden;
+}
+
+.embla__container {
     display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-.imgbox{
-    width: 60%;
-    margin-inline: auto;
-}
-
-.imgbox img{
-    width: 100%;
-    vertical-align: bottom;
-}
-
-@media (width < 500px) {
-    .imgbox{
-        width: 90%;
-    }
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
 }

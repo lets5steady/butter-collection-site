@@ -1,14 +1,11 @@
-import Image from "next/image";
+import Hero from "../Hero/Hero";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import styles from "./AboutUs.module.css";
-import Hero from "../Hero/Hero";
 
 export default function AboutUs() {
     return (
     <div>
-        <Hero>
-            <Image src='/images/hero-sable.jpg' alt='こだわりのサブレディアマン' width={1100} height={619} loading="eager"/>
-        </Hero>
+        <Hero />
         <section className={styles.container}>
             <SectionTitle text="About" />
             <div className={styles.about}>
