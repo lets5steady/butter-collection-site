@@ -11,17 +11,17 @@ export default function Footer() {
                 <ul className={styles.guide}>
                     <li className={styles.item}>
                         <Link className={styles.link} 
-                        href="/">お支払い方法</Link>
+                        href="/payment">お支払い方法</Link>
                     </li>
 
                     <li className={styles.item}>
                         <Link className={styles.link}
-                        href="/">配送／送料について</Link>
+                        href="/delivery">配送／送料について</Link>
                     </li>
 
                     <li className={styles.item}>
                         <Link className={styles.link}
-                        href="/">特定商取引法</Link>
+                        href="/legal">特定商取引法</Link>
                     </li>
                 </ul>
             </nav>
