@@ -56,3 +56,16 @@ export const getNewsDetail = async (
     });
     return detailData;
 };
+
+export const getLatestNews = async () => {
+    const res = await client.get({
+    endpoint: "news",
+    queries: {
+        limit: 1,
+        orders: "-publishedAt",
+        fields: "id,title,thumbnail",
+        },
+    });
+
+    return res.contents[0];
+}

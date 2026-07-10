@@ -33,6 +33,7 @@
 
 .name{
     font-size: clamp(1.25rem, 0.426vw + 1.117rem, 1.5rem);
+    font-weight: 400;
 }
 
 .desc{

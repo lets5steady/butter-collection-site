@@ -7,24 +7,15 @@ import Calendar from "./_components/Calendar/Calendar";
 import Map from "./_components/Map/Map";
 import Flex from "./_components/Flex/Flex";
 import ShopData from "./_components/ShopData/ShopData";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <MenuBar />
-      <Hero>
-        <Image 
-          src='/images/hero-giftbox.jpg'
-          alt='ヒーロー背景'
-          width={1100}
-          height={619}
-          loading="eager"
-        />
-      </Hero>
-      <SectionTitle text="Cookies"/>
+      <Hero />
+      <SectionTitle text="Cookies" id="product"/>
       <Product />
-      <SectionTitle text="Gift"/>
+      <SectionTitle text="Gift" id="gift"/>
       <SubProduct />
       <Features />
       <Flex>
