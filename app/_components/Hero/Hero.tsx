@@ -1,46 +1,39 @@
-'use client';
-import styles from './Hero.module.css';
-import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
-import Image from 'next/image';
-import Link from 'next/link';
+import { getLatestNews } from '@/app/_libs/microcms';
+import Slider from '../Slider/Slider';
+
+const latestNews = await getLatestNews();
+
+export type SliderItemType = {
+    id: string;
+    image: string;
+    href: string;
+    ariaLabel: string;
+};
+
+const items: SliderItemType[] = [
+  {
+    id: 'gift',
+    image: '/images/hero-giftbox.jpg',
+    href: '/#gift',
+    ariaLabel: 'ギフト商品を見る',
+  },
+    {
+    id: 'about',
+    image: '/images/hero-sable.jpg',
+    href: '/about/#about',
+    ariaLabel: 'aboutページへ移動',
+  },
+    {
+    id: 'news',
+    image: latestNews.thumbnail.url,
+    href: '/news/#news',
+    ariaLabel: 'newsページへ移動',
+  },
+];
 
 export default function Hero() {
-    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
-
 
     return(
-        <div className={styles.embla} ref={emblaRef}>
-            <div className={styles.embla__container}>
-                <div className={styles.embla__slide}>
-                    <div className={styles.imgbox}>
-                        <Link href='/#gift' aria-label='ギフト商品を見る'>
-                            <Image
-                                className={styles.img}
-                                src='/images/hero-giftbox.jpg'
-                                alt='ギフトボックス'
-                                width={1100}
-                                height={619}
-                                loading="eager"
-                            />
-                        </Link>
-                    </div>
-                </div>
-                <div className={styles.embla__slide}>
-                    <div className={styles.imgbox}>
-                        <Link href='/about' aria-label='aboutページへ移動'>
-                            <Image
-                                className={styles.img}
-                                src='/images/hero-sable.jpg'
-                                alt='こだわりのサブレディアマン'
-                                width={1100}
-                                height={619}
-                                loading="eager"
-                            />
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Slider items={items}/>
     );
 }

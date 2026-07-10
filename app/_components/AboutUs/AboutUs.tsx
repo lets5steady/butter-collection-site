@@ -7,7 +7,7 @@ export default function AboutUs() {
     <div>
         <Hero />
         <section className={styles.container}>
-            <SectionTitle text="About" />
+            <SectionTitle text="About" id="about" />
             <div className={styles.about}>
                 <h3 className={styles.title}>芳醇なバターが描く、至福のコレクション。</h3>
                 <p className={styles.text}>
