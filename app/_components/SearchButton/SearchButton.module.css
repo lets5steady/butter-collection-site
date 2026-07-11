@@ -1,0 +1,22 @@
+.inner{
+    /* 他のアイコンとのずれが生じるため指定 */
+    height: 48px;
+}
+
+.icon{
+    min-width: 32px;
+    padding: var(--space-xs);
+    display: block;
+    transition: all 0.3s ease-out 0s;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background-color: var(--main-color);
+}
+
+@media (width < 700px) {
+    .nav{
+        display: none;
+    }
+}
