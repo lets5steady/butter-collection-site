@@ -1,31 +1,31 @@
 :root {
   /* Colors */
-  --main-color: #DAD4E2;
-  --base-color: #FFFEF9;
-  --accent-color: #B9AFA3;
-  --text-color: #2E2A24;
-  --btn-color: #654250;
-  --btn-hover-color: #83606E;
+    --main-color: #DAD4E2;
+    --base-color: #FFFEF9;
+    --accent-color: #B9AFA3;
+    --text-color: #2E2A24;
+    --btn-color: #654250;
+    --btn-hover-color: #83606E;
 
-  /* Spacing */
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-  --space-ll: 3rem;
-  --space-xl: 4.5rem;
-  --space-sec: 6rem;
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-ll: 3rem;
+    --space-xl: 4.5rem;
+    --space-sec: 6rem;
 
-  /* Widths */
-  --max-width-pc: 1100px;
-  --max-width-sp: 315px;
+    /* Widths */
+    --max-width-pc: 1100px;
+    --max-width-sp: 315px;
 
-  /* Font Sizes */
-  --fontsize-xs: 0.625rem;
-  --fontsize-sm: 0.875rem;
-  --fontsize-md: 1rem;
-  --fontsize-lg: 1.25rem;
-  --fontsize-xl: 1.5rem;
+    /* Font Sizes */
+    --fontsize-xs: 0.625rem;
+    --fontsize-sm: 0.875rem;
+    --fontsize-md: 1rem;
+    --fontsize-lg: 1.25rem;
+    --fontsize-xl: 1.5rem;
 }
 
 html{
@@ -52,4 +52,15 @@ ul{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+button,
+input{
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
 }
