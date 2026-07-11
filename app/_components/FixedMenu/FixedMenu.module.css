@@ -36,7 +36,7 @@
     color: var(--text-color);
 }
 
-@media (width > 500) {
+@media (width > 700px) {
     .menu{
         display: none;
     }

@@ -1,23 +1,22 @@
+'use client';
 import Link from 'next/link';
 import styles from './HeaderNav.module.css';
 import Image from 'next/image';
-import search from '@/assets/search.png';
 import mypage from '@/assets/mypage.png';
 import cart from '@/assets/cart.png';
+import SearchButton from '../SearchButton/SearchButton';
 
-export default function HeaderNav() {
+type HeaderNavProps = {
+    onClick: () => void;
+    isSearchOpen: boolean;
+}
+
+export default function HeaderNav({onClick , isSearchOpen}:HeaderNavProps) {
+
     return (
         <ul className={styles.nav}>
             <li>
-                <Link href='/search'>
-                    <Image
-                        src={search}
-                        alt='検索'
-                        className={styles.icon}
-                        width={32}
-                        height={32}
-                    />
-                </Link>
+                <SearchButton onClick={onClick} isSearchOpen={isSearchOpen}/>
             </li>
             <li>
                 <Link href='/mypage'>
