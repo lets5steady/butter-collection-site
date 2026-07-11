@@ -14,7 +14,8 @@ export default function SearchBox({onChange , inputData , handleSearch }:SearchB
             <input type="text"
             placeholder='キーワードで検索'
             onChange={onChange}
-            value={inputData}/>
+            value={inputData}
+            name='search'/>
             <button 
             className={styles.btn}
             type='button'
