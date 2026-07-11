@@ -37,3 +37,22 @@
     font-family: var(--fontfamily-sub);
     color: var(--text-color);
 }
+
+.searchArea{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+}
+
+.link{
+    font-size: var(--fontsize-md);
+}
+
+.searchBox{
+    width: 240px;
+    height: auto;
+    padding-block: 10px;
+    padding-inline: 10px;
+    background-color: var(--base-color);
+}

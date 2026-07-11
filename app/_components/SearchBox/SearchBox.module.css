@@ -1,0 +1,14 @@
+.inner{
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn:focus{
+    outline: 1px solid var(--btn-color);
+    background-color: #e6f2ff;
+}
