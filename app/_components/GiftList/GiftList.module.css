@@ -1,16 +1,13 @@
 .list{
     max-width: var(--max-width-pc);
     margin-inline: auto;
-    padding-inline: var(--space-sm);
     display: grid;
-    grid-template-columns: repeat(3, minmax(180px , 290px));
+    grid-template-columns: repeat(auto-fit, minmax(300px , 490px));
     justify-content: center;
-    column-gap: 5%;
-    row-gap: var(--space-xl);
+    gap: 5%;
 }
 
-.item,
-.sub_item{
+.item{
     padding-bottom: var(--space-md);
     display: grid;
     grid-template-rows: subgrid;
@@ -21,12 +18,6 @@
     background-color: white;
     border: 1px solid var(--text-color);
     font-size: var(--font-size-sm);
-}
-
-.imgbox{
-    width: 100%;
-    aspect-ratio: 1/1;
-    overflow: hidden;
 }
 
 .img{
@@ -49,31 +40,15 @@
     line-height: 1.7;
 }
 
-.sub_list{
-    max-width: var(--max-width-pc);
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px , 490px));
-    justify-content: center;
-    gap: 5%;
-}
-
 @media (width < 500px) {
     .list{
-    max-width: var(--max-width-sp);
-    grid-template-columns: repeat(2, 1fr);
-    }
-    .item{
-        row-gap: 0;
-    }
-    .desc{
-        font-size: var(--fontsize-sm);
-    }
-    .sub_list{
         max-width: var(--max-width-sp);
         display: block;
     }
-    .sub_item{
-    margin-block-end: var(--space-lg);
+    .item{
+        margin-block-end: var(--space-lg);
+    }
+    .desc{
+        font-size: var(--fontsize-sm);
     }
 }

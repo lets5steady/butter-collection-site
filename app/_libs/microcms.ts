@@ -74,7 +74,7 @@ export const getLatestNews = async () => {
 }
 
 // ---------------Productデータ取得---------------
-export type Product = MicroCMSContentId & {
+export type ProductType = MicroCMSContentId & {
     name: string;
     slug: string;
     image: MicroCMSImage;
@@ -89,7 +89,7 @@ export const getProducts = async (category?: "cookie" | "gift") => {
         ? `category[contains]${category}`
         : undefined;
 
-    const data = await client.getList<Product>({
+    const data = await client.getList<ProductType>({
         endpoint: "product",
         queries: {
         filters,
