@@ -32,7 +32,7 @@
 
 .label{
     margin-block: 0;
-    font-size: 0.75rem;
+    font-size: var(--fontsize-ss);
     color: var(--text-color);
 }
 

@@ -19,6 +19,12 @@ export default function Header() {
         setIsSearchOpen((prev) => !prev);
     };
 
+    // ドロワーメニューを閉じる際にSearchBoxも同時に閉じる処理
+    const closeDrawerAndSearch = () => {
+        setIsDrawerOpen(false);
+        setIsSearchOpen(false)
+    };
+
     // SearchBoxでの入力内容
     const [inputData, setInputData] = useState("");
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -55,12 +61,12 @@ export default function Header() {
             <FixedMenu setIsDrawerOpen={setIsDrawerOpen} />
             {isDrawerOpen && (
                 <DrawerMenu
-                    setIsDrawerOpen={setIsDrawerOpen}
                     handleToggle={handleToggle}
                     isSearchOpen={isSearchOpen}
                     onChange={handleChange}
                     inputData={inputData}
                     handleSearch={handleSearch}
+                    setClose={closeDrawerAndSearch}
                 />
             )}
         </header>

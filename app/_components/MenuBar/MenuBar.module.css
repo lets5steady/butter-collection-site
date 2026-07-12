@@ -13,7 +13,7 @@
     padding: var(--space-sm);
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: var(--space-sm);
     font-size: clamp(2rem, 1.353vw + 1.405rem, 3rem);
     font-family: var(--fontfamily-english);
 }
