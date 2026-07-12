@@ -5,33 +5,33 @@ import close from "@/assets/close.png";
 import SearchBox from "../SearchBox/SearchBox";
 
 type DrawerMenuProps = {
-  setIsDrawerOpen: React.Dispatch<React.SetStateAction<boolean>>;
   handleToggle: () => void;
   isSearchOpen: boolean;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   inputData: string;
   handleSearch: () => void;
+  setClose: () => void;
 };
 
 export default function DrawerMenu({
-  setIsDrawerOpen,
   handleToggle,
   isSearchOpen,
   onChange,
   inputData,
   handleSearch,
+  setClose,
 }: DrawerMenuProps) {
 
   const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
-      setIsDrawerOpen(false);
+      setClose();
     }
   };
 
   return (
     <div className={styles.overlay} onClick={handleOverlayClick}>
       <div className={styles.drawerMenu}>
-        <button className={styles.btn} onClick={() => setIsDrawerOpen(false)}>
+        <button className={styles.btn} onClick={setClose}>
           <Image src={close} alt="閉じるボタン" width={24} height={24} />
         </button>
         <ul className={styles.list}>
@@ -53,7 +53,7 @@ export default function DrawerMenu({
             <Link
               href="/mypage"
               className={styles.link}
-              onClick={() => setIsDrawerOpen(false)}
+              onClick={setClose}
             >
               MyPage
             </Link>
@@ -62,7 +62,7 @@ export default function DrawerMenu({
             <Link
               href="/about"
               className={styles.link}
-              onClick={() => setIsDrawerOpen(false)}
+              onClick={setClose}
             >
               About
             </Link>
@@ -71,7 +71,7 @@ export default function DrawerMenu({
             <Link
               href="/news"
               className={styles.link}
-              onClick={() => setIsDrawerOpen(false)}
+              onClick={setClose}
             >
               News
             </Link>
