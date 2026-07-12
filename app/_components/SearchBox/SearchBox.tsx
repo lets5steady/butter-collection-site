@@ -20,6 +20,7 @@ export default function SearchBox({onChange , inputData , handleSearch }:SearchB
             className={styles.btn}
             type='button'
             onClick={handleSearch} 
+            aria-label='検索する'
             >
                 <Image
                 className={styles.img}

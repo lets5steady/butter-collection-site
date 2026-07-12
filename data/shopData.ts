@@ -3,11 +3,18 @@ import message from '@/assets/message.png';
 import instagram from '@/assets/instagram.png';
 import { StaticImageData } from 'next/image';
 
+type IconType = {
+    id: string;
+    src: StaticImageData;
+    ariaLabel: string;
+    href: string;
+};
+
 type InfoType = {
     id: string;
     name: string;
     description?: string;
-    image?: StaticImageData[];
+    image?: IconType[];
 }
 
 export const shopData:InfoType[] = [
@@ -39,6 +46,26 @@ export const shopData:InfoType[] = [
     {
         id: 'sns',
         name: 'SNS/お知らせ：',
-        image: [email,message,instagram],
+        image: [
+        {
+            id: 'mail',
+            src: email,
+            ariaLabel: 'メールを送信',
+            href: 'mailto:buttler-collection-example@example.com',
+        },
+        {
+            id: 'line',
+            src: message,
+            ariaLabel: '公式LINEを開く',
+            href: 'https://page.line.me/546erqbh'
+
+        },
+        {
+            id: 'instagram',
+            src: instagram,
+            ariaLabel: '公式Instagramを開く',
+            href: 'https://www.instagram.com/realstraykids/',
+        }
+    ]
     },
 ];

@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.list{
+    padding-inline-start: 0;
+}
+
 .imgbox{
     margin-block-end: var(--space-md);
     aspect-ratio: 3/2;

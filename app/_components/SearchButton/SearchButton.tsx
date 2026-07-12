@@ -11,10 +11,12 @@ type SearchButtonProps = {
 export default function SearchButton({onClick , isSearchOpen}:SearchButtonProps) {
     return(
             <div className={styles.inner}>
-                <button onClick={onClick}>
+                <button
+                    onClick={onClick}
+                    aria-label={isSearchOpen ? '検索ボックスを閉じる' : '検索ボックスを開く'}>
                     <Image
                         src={isSearchOpen ? close : search}
-                        alt='検索'
+                        alt=''
                         className={styles.icon}
                         width={32}
                         height={32}

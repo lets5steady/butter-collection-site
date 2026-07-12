@@ -19,10 +19,10 @@ export default function HeaderNav({onClick , isSearchOpen}:HeaderNavProps) {
                 <SearchButton onClick={onClick} isSearchOpen={isSearchOpen}/>
             </li>
             <li>
-                <Link href='/mypage'>
+                <Link href='/mypage' aria-label='マイページに移動'>
                     <Image
                         src={mypage}
-                        alt='マイページ'
+                        alt=''
                         className={styles.icon}
                         width={32}
                         height={32}
@@ -30,10 +30,10 @@ export default function HeaderNav({onClick , isSearchOpen}:HeaderNavProps) {
                 </Link>
             </li>
             <li>
-                <Link href='/cart'>
+                <Link href='/cart' aria-label='ショッピングカートに移動'>
                     <Image
                         src={cart}
-                        alt='ショッピングカート'
+                        alt=''
                         className={styles.icon}
                         width={32}
                         height={32}
