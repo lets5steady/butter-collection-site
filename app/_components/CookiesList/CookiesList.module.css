@@ -9,8 +9,7 @@
     row-gap: var(--space-xl);
 }
 
-.item,
-.sub_item{
+.item{
     padding-bottom: var(--space-md);
     display: grid;
     grid-template-rows: subgrid;
@@ -20,7 +19,7 @@
     text-align: center;
     background-color: white;
     border: 1px solid var(--text-color);
-    font-size: var(--font-size-sm);
+    font-size: var(--fontsize-sm);
 }
 
 .imgbox{
@@ -49,18 +48,10 @@
     line-height: 1.7;
 }
 
-.sub_list{
-    max-width: var(--max-width-pc);
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px , 490px));
-    justify-content: center;
-    gap: 5%;
-}
-
 @media (width < 500px) {
     .list{
     max-width: var(--max-width-sp);
+    padding-inline: 0;
     grid-template-columns: repeat(2, 1fr);
     }
     .item{
@@ -68,12 +59,5 @@
     }
     .desc{
         font-size: var(--fontsize-sm);
-    }
-    .sub_list{
-        max-width: var(--max-width-sp);
-        display: block;
-    }
-    .sub_item{
-    margin-block-end: var(--space-lg);
     }
 }

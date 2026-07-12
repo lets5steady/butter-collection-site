@@ -41,6 +41,8 @@ export default function Header() {
         }
 
         router.push(`/result?keyword=${encodeURIComponent(inputData)}`);
+        setInputData('');
+        closeDrawerAndSearch();
     };
 
     return (
