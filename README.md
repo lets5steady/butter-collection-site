@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Butter Collection(架空のクッキー専門店)
 
-## Getting Started
+## 概要
+学習初期にHTML/CSS/JavaScriptで実装したコーポレートサイトサイトを、Next.jsを用いたサイトへリニューアルしました。
+従来はトップページのみで構成されており、インタラクティブな要素の少ないサイトでした。
+今回のアップデートでは、ブランドの持つ落ち着きや高級感は活かしつつ、検索機能やスライダーの追加、下層ページの作成などを行いました。
+ニュース記事や商品情報の監理のしやすさからmicroCMSを導入し、Next.jsのルーティング機能なども活用しながら、運用性・拡張性を考慮した構成へ改善しています。
 
-First, run the development server:
+URL：https://butter-collection-site.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 使用技術
+- Next.js (App Router)
+- React
+- TypeScript
+- CSS Modules
+- microCMS
+- Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 制作から得た学び
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 各コンポーネントの役割を意識した設計
+「どこで状態を管理するべきか」「責務を抱えすぎていないか」を意識しながらコンポーネントを設計しました。
+特に検索機能では、PC版ではヘッダーナビゲーションの下、SP版では固定メニューから開くドロワーメニュー内というように、同じ検索コンポーネントを異なる位置へ表示する必要がありました。表示位置は異なる一方で、開閉状態は共通して管理する必要があり、コンポーネントの状態管理の設計で悩む場面がありました。
+また、当初は無かった機能を追加するにあたって、気付けば一つのコンポーネントが責務を抱えすぎていることがあり、単独でも成立する内容は別のコンポーネントに切り分けるなどして工夫しました。
+今回の実装を通して、コンポーネントとしての再利用性や、状態をどの場所で管理するべきかを考慮して設計することの重要性を学びました。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### アクセシビリティと品質を意識した実装
+Vercelの診断機能なども活用し、アクセシビリティや品質を確認しながら細かく改善を進めました。
+必要なタイミングでのaria-labelの付与などを意識し、単に機能を実装するだけではなく、多様な利用環境でも扱いやすいWebサイトにするためには多角的な視点を持つことが重要であると感じました。
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 今後のアップデート
+- 商品詳細ページの作成
+- カート機能の追加
+- タグ検索機能の追加
