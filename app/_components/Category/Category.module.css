@@ -1,6 +1,6 @@
 .tag{
     width: 72px;
-    padding-block: 0.5rem;
+    padding-block: var(--space-xs);
     background-color: var(--main-color);
     font-size: var(--fontsize-sm);
     display: flex;

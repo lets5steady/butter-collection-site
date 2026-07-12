@@ -17,6 +17,6 @@
 @media (width < 500px) {
     .btn{
         width: 130px;
-        padding: 0.5rem;
+        padding: var(--space-xs);
     }
 }

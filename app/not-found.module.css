@@ -44,6 +44,6 @@
         padding-block: var(--space-lg);
     }
     .link{
-        font-size: 0.75rem;
+        font-size: var(--fontsize-ss);
     }
 }
