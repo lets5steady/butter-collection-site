@@ -19,7 +19,7 @@
     text-align: center;
     background-color: white;
     border: 1px solid var(--text-color);
-    font-size: var(--font-size-sm);
+    font-size: var(--fontsize-sm);
 }
 
 .imgbox{
@@ -51,6 +51,7 @@
 @media (width < 500px) {
     .list{
     max-width: var(--max-width-sp);
+    padding-inline: 0;
     grid-template-columns: repeat(2, 1fr);
     }
     .item{

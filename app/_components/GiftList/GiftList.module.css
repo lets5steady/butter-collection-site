@@ -17,7 +17,7 @@
     text-align: center;
     background-color: white;
     border: 1px solid var(--text-color);
-    font-size: var(--font-size-sm);
+    font-size: var(--fontsize-sm);
 }
 
 .img{
