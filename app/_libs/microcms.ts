@@ -1,22 +1,11 @@
 import { createClient } from "microcms-js-sdk";
+
 import type {
     MicroCMSQueries,
     MicroCMSImage,
-    MicroCMSListContent
+    MicroCMSListContent,
+    MicroCMSContentId,
 } from "microcms-js-sdk";
-
-export type Category = {
-    name: string,
-} & MicroCMSListContent;
-
-
-export type News = {
-    title: string;
-    description: string;
-    content: string,
-    thumbnail?: MicroCMSImage,
-    category: Category,
-} & MicroCMSListContent;
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
     throw new Error("MICROCMS_SERVICE_DOMAIN is required")
@@ -30,6 +19,20 @@ const client = createClient({
     serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
     apiKey: process.env.MICROCMS_API_KEY
 });
+
+// ---------------Newsデータ取得---------------
+export type Category = {
+    name: string,
+} & MicroCMSListContent;
+
+export type News = {
+    title: string;
+    description: string;
+    content: string,
+    thumbnail?: MicroCMSImage,
+    category: Category,
+} & MicroCMSListContent;
+
 
 export const getNewsList = async (queries?: MicroCMSQueries) => {
     const listData = await client
@@ -69,3 +72,29 @@ export const getLatestNews = async () => {
 
     return res.contents[0];
 }
+
+// ---------------Productデータ取得---------------
+export type Product = MicroCMSContentId & {
+    name: string;
+    slug: string;
+    image: MicroCMSImage;
+    summary: string;
+    description: string;
+    price: number;
+    category: ("cookie" | "gift")[];
+};
+
+export const getProducts = async (category?: "cookie" | "gift") => {
+    const filters = category
+        ? `category[contains]${category}`
+        : undefined;
+
+    const data = await client.getList<Product>({
+        endpoint: "product",
+        queries: {
+        filters,
+        },
+    });
+
+    return data.contents;
+};
