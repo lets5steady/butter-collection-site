@@ -4,7 +4,7 @@ import { featuresData } from '@/data/features';
 
 export default function Features() {
     return (
-        <section className={styles.container}>
+        <div className={styles.container}>
             <div className={styles.inner}>
                 {featuresData.map(data => (
                     <div key={data.id}
@@ -25,6 +25,6 @@ export default function Features() {
                     </div>
                 ))}
             </div>
-        </section>
+        </div>
     );
 }
